@@ -90,21 +90,7 @@ header {
   //menu
 
 
-  .form-inline {
 
-    .btn {
-      border-left: 0;
-      border-radius: 0 50px 50px 0;
-
-      color: #919ca4;
-      outline: none;
-      background-color: #ffffff;
-    }
-
-    .btn:hover {
-      color: $color-silver;
-    }
-  }
 
   .navbar__list {
     margin-bottom: 0;
@@ -195,7 +181,7 @@ header {
 
       .phones-item {
         list-style-type: none;
-        font-family: $font-PTsans;
+        font-family: "PT Sans", sans-serif;
         color: $bg-blue;
         @include max-screen(1030px) {
           font-size: 14px;
@@ -297,26 +283,7 @@ header {
     }
   }
 
-  .form-inline {
 
-    .form-control {
-      border-right: 0;
-      border-radius: 50px 0 0 50px;
-
-    }
-
-    .btn {
-      border-left: 0;
-      border-radius: 0 50px 50px 0;
-
-      color: #919ca4;
-      outline: none;
-    }
-
-    .btn:hover {
-      color: $color-silver;
-    }
-  }
 
   .header-menu {
     display: flex;
