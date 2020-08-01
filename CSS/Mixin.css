@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Damion&family=Open+Sans:wght@600&family=PT+Sans:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu:wght@700&display=swap");
+@import url("../fontawesome-free-5.13.0-web/css/all.css");
+@import url("https://use.fontawesome.com/releases/v5.12.1/css/all.css");
+@import url(bootstrap.min.css);
+@import url(owl.theme.default.min.css);
+@import url(owl.carousel.css);
+* {
+  padding: 0;
+  margin: 0; }
+
+.form-control.active.focus,
+.form-control.active:focus,
+.form-control.focus,
+.form-control:active.focus,
+.form-control:active:focus,
+.form-control:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0 !important;
+  outline-color: transparent !important;
+  outline-width: 0 !important;
+  outline-style: none !important;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important; }
+
+a {
+  outline: none;
+  text-decoration: none; }
+
+.owl-carousel {
+  z-index: 0; }
+
+.owl-carousel .owl-nav .owl-prev {
+  background-image: url("../Images/left.png") !important;
+  width: 51px;
+  height: 51px;
+  position: absolute;
+  left: -75px;
+  top: 100px;
+  outline: none; }
+  .owl-carousel .owl-nav .owl-prev span {
+    display: none; }
+  @media screen and (max-width: 1030px) {
+    .owl-carousel .owl-nav .owl-prev {
+      display: none; } }
+
+.owl-carousel .owl-nav .owl-next {
+  background-image: url("../Images/right.png") !important;
+  width: 51px;
+  height: 51px;
+  position: absolute;
+  right: -75px;
+  top: 100px;
+  outline: none; }
+  .owl-carousel .owl-nav .owl-next span {
+    display: none; }
+  @media screen and (max-width: 1030px) {
+    .owl-carousel .owl-nav .owl-next {
+      display: none; } }
+
+.owl-dots {
+  margin-top: 10px;
+  text-align: center; }
+
+.owl-dot {
+  outline: none !important; }
+
+.owl-dot {
+  width: 48px; }
+  .owl-dot span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #4f484a;
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 12px; }
+
+.active span {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+  background-color: #FFFFFF;
+  display: inline-block; }
+
+/*# sourceMappingURL=Mixin.css.map */

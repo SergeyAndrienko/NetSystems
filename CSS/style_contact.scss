@@ -1,0 +1,231 @@
+@import "Mixin.scss";
+
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .content {
+    background-color: #ececec;
+    padding: 50px 0 0;
+
+    h1 {
+      color: $bg-blue;
+      font-size: 65px;
+      margin-bottom: 100px;
+      @include max-screen(820px){
+        margin-top: 70px;
+
+      }
+      @include max-screen(570px){
+        text-align: center;
+      }
+    }
+
+    .inform {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 50px;
+      @include max-screen(570px){
+        flex-direction: column;
+        text-align: center;
+      }
+      .contact {
+
+        span {
+          display: block;
+          color: $bg-blue;
+          font-size: 20px;
+        }
+
+        .title {
+          color: $bg-blue;
+          font-size: 35px;
+          margin-bottom: 30px;
+        }
+
+        .tel {
+          span:nth-child(1) {
+            margin-top: 20px;
+          }
+        }
+        .mail{
+          color: $bg-blue;
+          font-size: 20px;
+          margin-top: 20px;
+          a{
+            color: $bg-blue;
+            text-decoration: none;
+            outline: none;
+          }
+          a:hover{
+            border-bottom: 1px dotted $bg-blue;
+          }
+        }
+
+        .links {
+          margin-top: 20px;
+          @include max-screen(740px) {
+            margin: 20px auto;
+
+          }
+
+          a {
+            color: $bg-blue;
+            @include max-screen(570px) {
+              margin-left: 10px;
+
+            }
+
+            i {
+              font-size: 30px;
+              margin-right: 10px;
+            }
+
+
+          }
+
+          a:nth-child(1) {
+            @include max-screen(570px) {
+              margin-left: 0;
+
+            }
+          }
+
+          a:nth-child(1):hover {
+            color: #4267B2;
+            opacity: 1;
+
+          }
+
+          a:nth-child(2):hover {
+            color: #00a0d0;
+            opacity: 1;
+          }
+
+          a:nth-child(3):hover {
+            color: #E1306C;
+            opacity: 1;
+          }
+
+
+        }
+      }
+      .maps{
+        width: 100%;
+        iframe{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .message {
+      background-color: #f05a02;
+      padding: 50px 0 ;
+      @include max-screen(570px) {
+        padding: 110px 0;
+      }
+
+      .row {
+        display: block;
+
+        h3 {
+          color: #ececec;
+          margin-bottom: 80px;
+          font-size: 50px;
+          font-weight: 600;
+          @include max-screen(570px) {
+            margin-left: 0;
+            text-align: center;
+          }
+        }
+
+        .form-inline {
+          display: block;
+
+          .inputs-form {
+            display: flex;
+            justify-content: space-between;
+            @include max-screen(570px) {
+              flex-direction: column;
+              padding: 0 5px;
+            }
+
+            input {
+              border: 1px solid white;
+              border-radius: 10px;
+              padding: 10px;
+              background-color: #f05a02 !important;
+              color: #ececec !important;
+              margin-right: 30px;
+              width: 50%;
+              outline: none;
+              @include max-screen(570px) {
+                width: 100%;
+                margin-bottom: 20px;
+              }
+            }
+
+            input:nth-child(3) {
+              margin-right: 0;
+            }
+          }
+
+          .body-message {
+            @include max-screen(570px) {
+              padding: 0 5px;
+            }
+
+            textarea {
+              margin-top: 30px;
+              border: 1px solid white;
+              border-radius: 10px;
+              padding: 10px;
+              background-color: #f05a02;
+              color: #ececec;
+              outline: none;
+              width: 100%;
+              resize: none;
+              height: 100px;
+              @include max-screen(570px) {
+
+                width: 100%;
+                height: 150px;
+
+              }
+            }
+          }
+
+          .btn {
+            border: 1px solid #ececec;
+            color: #ececec;
+            background-color: #f05a02;
+            display: flex;
+            justify-content: center;
+            margin-right: 0;
+            margin-left: auto;
+            margin-top: 10px;
+            text-align: center;
+            width: 20%;
+            font-size: 20px;
+            line-height: 45px;
+            border-radius: 10px;
+            @include max-screen(570px) {
+              margin: 20px auto;
+              width: 50%;
+            }
+          }
+
+          .btn:hover {
+            background-color: #ececec;
+            color: #f05a02;
+          }
+
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@import "Mixin.scss";
+
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .content {
+    background-color: #ececec;
+    padding: 50px 0;
+
+    h1 {
+      color: $bg-blue;
+      font-size: 62px;
+      margin-bottom: 100px;
+      @include max-screen(820px){
+        padding-top: 70px;
+        text-align: center;
+      }
+    }
+
+
+    .al-c {
+      display: table;
+      width: 100%;
+      height: 100%;
+    }
+
+    .contain {
+      padding-right: 5px;
+      padding-left: 5px;
+      margin-right: auto;
+      margin-left: auto;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      .title{
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+
+
+    }
+
+    .effects {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 0;
+      height: 100%;
+
+      li {
+        position: relative;
+        display: inline-block;
+        box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+        margin-bottom: 40px;
+        font: normal 14px sans-serif;
+        overflow: hidden;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        max-height: 325px;
+
+        img {
+          display: block;
+          position: relative;
+
+
+        }
+
+        a {
+          display: inline-block;
+          text-decoration: none;
+          padding: 5px 10px;
+          color: #fff;
+          border-bottom: 1px solid transparent;
+          font-size: 90%;
+          transition: all 0.4s ease-in-out;
+        }
+
+        a:hover {
+          border-bottom: 1px dotted #ececec;
+        }
+
+        div {
+          opacity: 0;
+          background-color: rgba(11, 46, 89, 0.69);
+          transition: all 0.4s ease-in-out;
+          color: #fff;
+          transform: translate(250px, 0px) rotate(0deg);
+        }
+
+      }
+
+      li > div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+
+      li:hover > div {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+      }
+
+      li:hover div {
+        opacity: 1;
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+    }
+
+
+    @include max-screen(350px) {
+      .effects {
+        li {
+          font-size: 10px;
+        }
+      }
+    }
+
+
+  }
+
+
+}
