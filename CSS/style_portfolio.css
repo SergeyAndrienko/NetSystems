@@ -392,6 +392,9 @@ footer {
         .page .content h1 {
           padding-top: 70px;
           text-align: center; } }
+      @media screen and (max-width: 330px) {
+        .page .content h1 {
+          font-size: 52px; } }
     .page .content .al-c {
       display: table;
       width: 100%;
@@ -428,6 +431,9 @@ footer {
         .page .content .effects li img {
           display: block;
           position: relative; }
+          @media screen and (max-width: 330px) {
+            .page .content .effects li img {
+              width: 100%; } }
         .page .content .effects li a {
           display: inline-block;
           text-decoration: none;
